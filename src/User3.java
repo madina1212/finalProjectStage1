@@ -11,7 +11,7 @@ public class User3 implements UserService {
 
     @Override
     public String createUser(List<User> users) {
-        his.users.addAll(users);
+        this.users.addAll(users);
         return "WAS SUCCESSFUL!!!";
     }
 

@@ -5,6 +5,7 @@ import model.Book;
 import model.User;
 
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,11 +25,11 @@ public class Main {
         List<User> userList = new ArrayList<>(Arrays.asList(user1,user2,user3,user4,user5));
 
         List<Genre> genres = Arrays.asList(Genre.DETECTIVE,Genre.FANTASY,Genre.HISTORICAL,Genre.ROMANCE);
-        Book book = new Book(1L,"Хроника2",Genre.FANTASY,500,"Геннадий Елагин",Language.ENGLISH,2012);
-        Book book1 = new Book(3L,"акча бул сeн",Genre.ROMANCE,600,"Геннадий Елагин",Language.KYRGYZ, LocalDate.ofYearDay());
-        Book book2= new Book(5L,"озунду жeн",Genre.HISTORICAL,800,"Геннадий Елагин","русский",2013);
-        Book book3= new Book(4L,"дуйнону дунгуроткон 100 инсан",Genre.FANTASY,1500,"Геннадий Елагин","русский",2020);
-        Book book4= new Book(6L,"олЪшая книга",Genre.FANTASY,2300,"Геннадий Елагин","русский",20119);
+        Book book = new Book(1L,"Хроника2",Genre.FANTASY,BigDecimal.valueOf(1500),"Геннадий Елагин",Language.ENGLISH,LocalDate.of(2022,12,13));
+        Book book1 = new Book(3L,"акча бул сeн",Genre.ROMANCE,BigDecimal.valueOf(3500),"Геннадий Елагин",Language.KYRGYZ, LocalDate.of(2022,11,23));
+        Book book2= new Book(5L,"озунду жeн",Genre.HISTORICAL,BigDecimal.valueOf(3500),"Геннадий Елагин",Language.KYRGYZ,LocalDate.of(2002,9,25));
+        Book book3= new Book(4L,"дуйнону дунгуроткон 100 инсан",Genre.FANTASY, BigDecimal.valueOf(20000),"Геннадий Елагин",Language.ENGLISH,LocalDate.of(2022,23,10));
+        Book book4= new Book(6L,"олЪшая книга",Genre.FANTASY,BigDecimal.valueOf(2500),"Геннадий Елагин",Language.RUSSIAN,LocalDate.of(2022,8,17));
         List<Book> books = new ArrayList<>(Arrays.asList(book,book1,book2,book3,book4));
 
 

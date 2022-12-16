@@ -1,7 +1,6 @@
 import model.Book;
 import service.BookService;
 
-import java.lang.constant.Constable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,13 +24,8 @@ public class Bookipl implements BookService {
     }
 
     @Override
-    public String removeBookById(Long id) {
-        for (Book book : books) {
-            if (book.getId().equals(id)) {
-                this.books.remove(book);
-            }
-        }
-        return "WAS SUCCESSFUL!!!";
+    public Book removeBookById(Long id) {
+        return null;
     }
 
     @Override
