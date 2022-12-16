@@ -4,9 +4,9 @@ import model.Book;
 
 import java.util.List;
 
-public interface BookService {
+public interface BookService  {
 
-    List <Book> createBooks(List<Book>books);
+    String createBooks(List<Book>books);
 
     List<Book> getAllBooks();
 

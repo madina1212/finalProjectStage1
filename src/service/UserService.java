@@ -1,11 +1,12 @@
 package service;
 
+import com.sun.tools.javac.Main;
 import model.Book;
 import model.User;
 
 import java.util.List;
 
-public interface UserService{
+public interface UserService  {
 
     String createUser(List<User> users);
 
